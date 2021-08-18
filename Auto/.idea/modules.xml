@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Auto.iml" filepath="$PROJECT_DIR$/.idea/Auto.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chartep1/Chartep1.iml" filepath="$PROJECT_DIR$/Chartep1/Chartep1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chartep2/Chartep2.iml" filepath="$PROJECT_DIR$/Chartep2/Chartep2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chartep3/Chartep3.iml" filepath="$PROJECT_DIR$/Chartep3/Chartep3.iml" />
     </modules>
   </component>
 </project>

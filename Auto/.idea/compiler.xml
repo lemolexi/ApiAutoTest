@@ -7,11 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chartep1" />
+        <module name="Chartep2" />
+        <module name="Chartep3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Auto" target="1.5" />
-      <module name="Chartep1" target="1.5" />
+      <module name="Auto" target="1.8" />
+      <module name="Chartep1" target="1.8" />
+      <module name="Chartep2" target="1.8" />
+      <module name="Chartep3" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
