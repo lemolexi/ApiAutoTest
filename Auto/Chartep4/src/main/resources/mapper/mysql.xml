@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">
+
+    <insert id="addUser" parameterType="com.course.module.User">
+        insert into User(id,name,age,sex) values (#{id},#{name},#{age},#{sex});
+    </insert>
+    <delete id="delUser" parameterType="com.course.module.User">
+        DELETE FROM User WHERE id = #{id};
+    </delete>
+    <update id="updataUser" parameterType="com.course.module.User">
+        UPDATE User SET name = #{name} WHERE id = #{id};
+    </update>
+    <select id="getUser" resultType="Integer">
+        select age from User where name = #{name};
+    </select>
+    <select id="getUsersex" resultType="String">
+        select sex from User where name = #{name};
+    </select>
+</mapper>

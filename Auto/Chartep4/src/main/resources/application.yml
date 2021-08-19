@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: report
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.20.11.150:3306/tsign_wanglin_test?useSSL=false
+    username: root
+    password: Timevale#123
+
+mybatis:
+  type-aliases-package: com.course.module
+  mapper-locations:
+    - mapper/*

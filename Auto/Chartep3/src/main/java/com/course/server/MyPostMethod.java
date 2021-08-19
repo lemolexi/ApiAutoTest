@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 @Api(value = "/",description = "我的全部post请求接口")
 public class MyPostMethod {
 
-    private Cookie cookie;
+    private static Cookie cookie;
 
     /**
      * 模拟用户登录接口
