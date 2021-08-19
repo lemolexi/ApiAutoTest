@@ -2,3 +2,4 @@
 1、springboot+bean
 2、mock接口
 3、testNG测试
+594Liang
