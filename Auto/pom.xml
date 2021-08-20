@@ -12,6 +12,7 @@
         <module>Chartep2</module>
         <module>Chartep3</module>
         <module>Chartep4</module>
+        <module>Chartep5</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
