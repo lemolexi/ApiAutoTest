@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jredis:jredis-core-api:06052013">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jredis/jredis-core-api/06052013/jredis-core-api-06052013.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jredis/jredis-core-api/06052013/jredis-core-api-06052013-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jredis/jredis-core-api/06052013/jredis-core-api-06052013-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

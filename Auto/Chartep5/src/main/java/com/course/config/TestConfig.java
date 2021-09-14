@@ -1,5 +1,8 @@
 package com.course.config;
 
+import org.apache.http.client.CookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 /**
  * FileName: TestConfig
  * Author:   wanglin
@@ -17,4 +20,6 @@ public class TestConfig {
     public static String getUserListInfouri;
     public static String getUserInfouri;
     public static String addUseruri;
+    public static DefaultHttpClient defaultHttpClient;
+    public static CookieStore cookieStore;
 }

@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: wanglin
+
+spring:
+  application:
+    name: userManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.20.11.150:3306/tsign_wanglin_test
+    username: root
+    password: Timevale#123
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*

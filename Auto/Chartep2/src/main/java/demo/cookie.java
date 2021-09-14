@@ -75,5 +75,28 @@ public class cookie {
         System.out.println(result);
     }
 
+    @Test(dependsOnMethods = {"test"})
+    public void test1() throws IOException {
+        String  testUrl = this.url + bundle.getString("post.uri");
+
+        HttpPost httpPost1 = new HttpPost(testUrl);
+
+        httpPost1.setHeader("Content-Type","application/json");
+
+        JSONObject parame = new JSONObject();
+        parame.put("user","wanglin");
+        parame.put("pwd","wanglin");
+
+        StringEntity entity = new StringEntity(parame.toString(),"utf-8");
+        httpPost1.setEntity(entity);
+
+        CloseableHttpClient httpClient1 = HttpClients.custom().setDefaultCookieStore(this.cookieStore).build();
+
+        HttpResponse response = httpClient1.execute(httpPost1);
+
+        String result = EntityUtils.toString(response.getEntity());
+        System.out.println(result);
+    }
+
 
 }

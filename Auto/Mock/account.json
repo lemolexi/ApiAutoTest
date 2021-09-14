@@ -1,0 +1,93 @@
+[
+  {
+    "description":"登录系统",
+    "request":{
+      "uri":"/login",
+      "method":"post",
+      "headers":{
+        "Content-Type":"application/json"
+      },
+      "json":{
+        "username":"admin",
+        "password":"admin"
+      }
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "msg":"success",
+        "status":"200"
+      }
+    }
+  },
+
+  {
+    "description": "这是一个带cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangshan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "status": 200,
+      "json": {
+        "zhangshan": "成功",
+        "status": 1
+      }
+    }
+  },
+  {
+    "description":"插入操作",
+    "request":{
+      "uri":"/adduserlist",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "headers":{
+        "Content-Type":"application/json"
+      },
+      "json":{
+        "user":"wanglin",
+        "pwd":"wanglin"
+      }
+    },
+    "response":{
+      "text":"success",
+      "json":{
+        "msg":"success",
+        "status":"200"
+      }
+    }
+  },
+  {
+    "description":"查询登录信息",
+    "request":{
+      "uri":"/getuser",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      },
+      "headers":{
+        "Content-Type":"application/json"
+      }
+    },
+    "response":{
+      "json":{
+        "msg":"success",
+        "status":"200"
+      }
+    }
+  }
+]

@@ -15,7 +15,6 @@ import lombok.Data;
 @Data
 public class AddUserCase {
 
-    private String id;
     private String userName;
     private String passWd;
     private String sex;

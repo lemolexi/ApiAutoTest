@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">
+    <!--登录接口sql语句-->
+    <select id="Login" resultType="Integer" parameterType="com.course.model.User">
+        select count(*) from user where userName=#{userName} and passWd=#{passWd}
+    </select>
+    <!--增加用户接口sql语句-->
+    <insert id="AddUser" parameterType="com.course.model.User">
+        insert into user (userName,passWd,age,sex,permission,isDelete) VALUES (#{userName},#{passWd},#{age},#{sex},#{permission},#{isDelete});
+    </insert>
+    <!--更新用户接口sql语句-->
+    <update id="UpdateUserInfo" parameterType="com.course.model.User">
+        update user
+        <trim prefix="set" prefixOverrides=",">
+            <if test="null != userName and '' != userName">
+                userName=#{userName}
+            </if>
+            <if test="null != sex and '' != sex">
+                sex=#{sex}
+            </if>
+            <if test="null != age and '' != age">
+                age=#{age}
+            </if>
+            <if test="null != permission and '' != permission">
+                permission=#{permission}
+            </if>
+            <if test="null != isDelete and '' != isDelete">
+                isDelete=#{isDelete}
+            </if>
+        </trim>
+    </update>
+    <!--查询用户接口sql语句-->
+    <select id="GetUserInfo" parameterType="com.course.model.User" resultType="com.course.model.User">
+        select * from user
+        <trim prefix="shere" prefixOverrides="and">
+            <if test="null != id and '' != id">
+                id=#{id}
+            </if>
+            <if test="null != userName and '' != userName">
+                userName=#{userName}
+            </if>
+            <if test="null != sex and '' != sex">
+                sex=#{sex}
+            </if>
+            <if test="null != age and '' != age">
+                age=#{age}
+            </if>
+            <if test="null != permission and '' != permission">
+                permission=#{permission}
+            </if>
+            <if test="null != isDelete and '' != isDelete">
+                isDelete=#{isDelete}
+            </if>
+        </trim>
+    </select>
+    <select id="selectTodayFileKey"  parameterType="com.course.model.User" resultType="String">
+        select
+        doc.sign_fileKey
+        from sf_process_info info left join sf_process_doc doc on info.id = doc.process_id
+        where info.gmt_modified &gt;= #{startDate,jdbcType=VARCHAR}  and info.gmt_modified &lt; #{endDate,jdbcType=VARCHAR}
+    </select>
+</mapper>

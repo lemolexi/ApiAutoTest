@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: timevale.exceptions-collector:exceptions-collector-platform.filesystem:3.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.filesystem/3.0.1-SNAPSHOT/exceptions-collector-platform.filesystem-3.0.1-20190129.025614-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.filesystem/3.0.1-SNAPSHOT/exceptions-collector-platform.filesystem-3.0.1-20190129.025614-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.filesystem/3.0.1-SNAPSHOT/exceptions-collector-platform.filesystem-3.0.1-20190129.025614-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

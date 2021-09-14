@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 public class User {
 
-    private String id;
+//    private int id;
     private String userName;
     private String passWd;
     private String sex;
@@ -26,8 +26,8 @@ public class User {
     @Override
     public String toString(){
         return (
-                "{id:" + id + "," +
-                "userName:" + userName + "," +
+//                "{id:" + id + "," +
+                "{userName:" + userName + "," +
                 "passWd:" + passWd + "," +
                 "sex:" + sex + "," +
                 "age:" + age + "," +

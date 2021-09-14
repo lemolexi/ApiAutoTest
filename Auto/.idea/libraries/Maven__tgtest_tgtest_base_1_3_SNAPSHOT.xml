@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: tgtest:tgtest-base:1.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/tgtest/tgtest-base/1.3-SNAPSHOT/tgtest-base-1.3-20201110.120312-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/tgtest/tgtest-base/1.3-SNAPSHOT/tgtest-base-1.3-20201110.120312-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/tgtest/tgtest-base/1.3-SNAPSHOT/tgtest-base-1.3-20201110.120312-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: timevale.exceptions-collector:exceptions-collector-platform.open-apigw:3.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.open-apigw/3.0.1-SNAPSHOT/exceptions-collector-platform.open-apigw-3.0.1-20171228.020709-7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.open-apigw/3.0.1-SNAPSHOT/exceptions-collector-platform.open-apigw-3.0.1-20171228.020709-7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/timevale/exceptions-collector/exceptions-collector-platform.open-apigw/3.0.1-SNAPSHOT/exceptions-collector-platform.open-apigw-3.0.1-20171228.020709-7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

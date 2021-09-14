@@ -1,0 +1,25 @@
+[
+  {
+    "description":"新增用户",
+    "request":{
+      "uri":"/adduser",
+      "method":"post",
+      "headers":{
+        "Content-Type":"application/json"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "user":"wanglin",
+        "pwd":"wanglin"
+      }
+    },
+    "response":{
+      "json":{
+        "msg":"success",
+        "status":"200"
+      }
+    }
+  }
+]
